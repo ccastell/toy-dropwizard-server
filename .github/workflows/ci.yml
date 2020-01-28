@@ -38,11 +38,11 @@ jobs:
 
             - name: Install Requirements
               working-directory: .
-              run: pip3 install -U pytest && pip3 install -U request
+              run: pip3 install -U pytest && pip3 install -U requests
 
             - name: Run system Tests
               working-directory: .
-              run: python3 -m pytest -sv
+              run: pytest -sv
 
             - name: Stop Docker
               working-directory: .
