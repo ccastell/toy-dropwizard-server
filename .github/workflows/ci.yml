@@ -42,7 +42,7 @@ jobs:
 
             - name: Run system Tests
               working-directory: .
-              run: pytest -sv
+              run: python3 -m pytest -sv
 
             - name: Stop Docker
               working-directory: .
